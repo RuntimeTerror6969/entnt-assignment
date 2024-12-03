@@ -1,0 +1,180 @@
+/* src/App.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #3b82f6;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Headings */
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1e40af;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+/* Buttons */
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form textarea,
+form select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+table th {
+  background-color: #1e293b;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+table tr:hover {
+  background-color: #e2e8f0;
+}
+
+/* Calendar View */
+.calendar-container {
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: white;
+}
+
+.full-calendar {
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Notifications */
+.notifications {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.notification-item {
+  padding: 1rem;
+  background-color: #e5f3ff;
+  border-left: 4px solid #2563eb;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.notification-item.overdue {
+  border-left-color: #ef4444;
+  background-color: #ffe4e6;
+}
+
+.notification-item.due-today {
+  border-left-color: #facc15;
+  background-color: #fff7d9;
+}
